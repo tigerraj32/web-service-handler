@@ -1,0 +1,30 @@
+{
+  "name": "react-native-web-service-handler",
+  "version": "1.0.1",
+  "description": "Easy to use web service handler for making http request (GET and POST) from mobile application both in android and ios.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tigerraj32/web-service-handler.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "web",
+    "service",
+    "handler",
+    "call",
+    "get",
+    "post",
+    "api"
+  ],
+  "author": "rajan twanabashu <rajantwnabashu@gmail.com> (rajantwanabashu.com.np)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tigerraj32/web-service-handler/issues"
+  },
+  "homepage": "https://github.com/tigerraj32/web-service-handler#readme"
+}
