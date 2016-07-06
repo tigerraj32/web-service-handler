@@ -21,6 +21,8 @@ make sure that you have added  you have configure **App Transport Security Setti
 
 ## HTTP Get Request 
 ```
+import WebServiceHandler from 'react-native-web-service-handler';
+
 WebServiceHandler.get('https://itunes.apple.com/search',null,{'media':'movie', 'term':'mission'})
          .then((val)=>{
            console.log('callapi: ' + JSON.stringify(val))
@@ -29,6 +31,8 @@ WebServiceHandler.get('https://itunes.apple.com/search',null,{'media':'movie', '
 ```
 ## HTTP Post Request 
 ```
+import WebServiceHandler from 'react-native-web-service-handler';
+
 WebServiceHandler.post('https://itunes.apple.com/search',null,{'media':'movie', 'term':'mission'})
          .then((val)=>{
            console.log('callapi: ' + JSON.stringify(val))
