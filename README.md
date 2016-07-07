@@ -16,8 +16,8 @@ One of the easiest way to make api call from mobile application that support bot
 ### Installation
 `npm install --save react-native-web-service-handler`
 
-Before api call
-![](https://github.com/tigerraj32/web-service-handler/blob/master/images/0.png)
+
+![](https://github.com/tigerraj32/web-service-handler/blob/master/images/0.png) ![](https://github.com/tigerraj32/web-service-handler/blob/master/images/1.png)
 
 ### Setup iOS
 make sure that you have added  you have configure **App Transport Security Settings** in your plist file. This is required because most of the web service still uses **http**  , by default latest version of ios block such request. 
