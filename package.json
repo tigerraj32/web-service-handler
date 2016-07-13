@@ -1,6 +1,6 @@
 {
   "name": "react-native-web-service-handler",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Easy to use web service handler for making http request (GET and POST) from mobile application both in android and ios.",
   "main": "index.js",
   "scripts": {

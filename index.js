@@ -6,14 +6,15 @@ import {
 
 
 export default class WebServiceHandler {
-  
+
  // HTTP Header Generator.
   static header(headerParam: Object){
+    console.log('Header Parameter:' + JSON.stringify(headerParam));
     var headers = new Headers();
     headers.append('Accept', 'application/json');
-    if (headerParam) {
-      headers.append(headerParam);
-    }
+    Object.keys(headerParam).forEach(function (key) {
+      headers.append(key, headerParam[key]);
+    });
     return headers;
   }
 
@@ -110,5 +111,3 @@ export default class WebServiceHandler {
    }
 
 }
-
-

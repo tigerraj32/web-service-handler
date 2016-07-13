@@ -47,10 +47,12 @@
      //https://itunes.apple.com/search
      //https://itunes.apple.com/search?media=movie&term=miss
      //http://private-9a68f1-photoosdotnet.apiary-mock.com/demo
-      WebServiceHandler.get('https://itunes.apple.com/search',null,{'media':'movie', 'term':'mission'})
+      WebServiceHandler.get('http://photoos.uatboondrive.com:3000/api/collections/getAllEventCollections',
+      {'x-auth-token': '836a921ba30d9ba28a5d06b9430ac93a3209810e9c9e6ec14553193041adc3903cce9dfb071eb067a1fa63f2d5bc412e14626fad304aaa63dbc82da30972e1c7'},
+      {'path':''})
          .then((val)=>{
            console.log('callapi: ' + JSON.stringify(val))
-           this.setState({data:val})
+           this.setState({data:val})          
          })
          .catch((error) => console.log('callapi:'+ JSON.stringify(error)));
    }
