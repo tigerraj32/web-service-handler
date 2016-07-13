@@ -47,7 +47,7 @@ export default class WebServiceHandler {
               console.log('URL:-' + URL);
               fetch(URL,{
                 method: 'get',
-                'headers': WebServiceHandler.header(null)
+                'headers': WebServiceHandler.header(headerParam)
               })
               .then(function(response) {
                 console.log(response.status);
@@ -85,7 +85,7 @@ export default class WebServiceHandler {
                console.log('URL:-' + url);
                fetch(url,{
                  method: 'post',
-                 'headers': WebServiceHandler.header(null),
+                 'headers': WebServiceHandler.header(headerParam),
                  body: JSON.stringify(parameter)
                })
                .then(function(response) {
