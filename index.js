@@ -20,7 +20,8 @@ export default class WebServiceHandler {
 
   // HTTP request parameter Generator.
   static parameter(parameter: Object){
-    if (!parameter) {
+    
+    if (Object.keys(parameter).length === 0) {
       return "";
     }
     var urlParameter = '?'
